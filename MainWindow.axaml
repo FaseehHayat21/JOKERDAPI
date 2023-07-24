@@ -1,0 +1,264 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+		Width="420"
+		Height="550"
+        x:Class="JOKERDAPI.MainWindow"
+        Title="JOKERDAPI">
+         <StackPanel>
+<Button
+Name="login"
+Click="loginbtn"
+Height="40"
+Width="150"
+VerticalContentAlignment="Center"
+HorizontalAlignment="Center"
+HorizontalContentAlignment="Center"
+VerticalAlignment="Center"
+Background="SandyBrown"
+FontWeight="Bold"
+Margin="2 260"
+>LOG IN AS GUEST</Button>
+<Label
+BorderBrush="Black"
+Background="Black"
+Height="40"
+Margin="10"
+FontSize="18"
+Foreground="WhiteSmoke"
+VerticalContentAlignment="Center"
+HorizontalContentAlignment="Center"
+>
+WELCOME TO JOKE APP
+</Label>
+<Grid
+ColumnDefinitions="370"
+HorizontalAlignment="Center"
+VerticalAlignment="Center">
+<TextBox
+Name = "usernamebox"
+Grid.Row="0"
+BorderThickness="3"
+Width="190"
+Height="20"
+FontWeight="Bold"
+HorizontalAlignment="Center"
+VerticalAlignment="Bottom"
+VerticalContentAlignment="Center"
+HorizontalContentAlignment="Center"
+Margin="20 4 4 4">
+</TextBox>
+<Button
+Name="logout"
+Click="logoutbtn"
+Grid.Row="0"
+Margin="4 4 0 6"
+Width="80"
+FontWeight="Bold"
+HorizontalContentAlignment="Center"
+VerticalContentAlignment="Center"
+Height="30"
+Background="LightCyan"
+HorizontalAlignment="Right"
+VerticalAlignment="Bottom"
+>
+LOGOUT
+</Button>
+<Button
+Name="profile"
+Click="profilebtn"
+Grid.Row="0"
+Margin="0 4 30 6"
+Width="95"
+HorizontalContentAlignment="Center"
+VerticalContentAlignment="Center"
+Height="30"
+FontWeight="Bold"
+Background="DarkGray"
+HorizontalAlignment="Left"
+VerticalAlignment="Bottom"
+>
+PROFILE
+</Button>
+</Grid>
+<Grid
+ColumnDefinitions="370"
+RowDefinitions="230 200"
+HorizontalAlignment="Center"
+VerticalAlignment="Center"
+>
+<TextBox
+Name="jokebox"
+Grid.Row="0"
+BorderThickness="1 6 1 2"
+Margin="0 0 0 40">
+</TextBox>
+<TextBox
+Name="searchbox"
+Grid.Row="0"
+BorderThickness="3"
+Width="190"
+Height="20"
+HorizontalAlignment="Center"
+VerticalAlignment="Bottom"
+Margin="20 4 4 4">
+</TextBox>
+<Button
+Name="search"
+Click="searchbtn"
+Grid.Row="0"
+Margin="4 4 0 6"
+Width="77"
+HorizontalContentAlignment="Center"
+VerticalContentAlignment="Center"
+Height="30"
+FontWeight="Bold"
+Background="DarkGray"
+HorizontalAlignment="Right"
+VerticalAlignment="Bottom"
+>
+SEARCH
+</Button>
+<Button
+Name="generate"
+Click="generatebtn"
+Grid.Row="0"
+Margin="0 4 30 6"
+Width="95"
+HorizontalContentAlignment="Center"
+VerticalContentAlignment="Center"
+Height="30"
+FontWeight="Bold"
+Background="DodgerBlue"
+HorizontalAlignment="Left"
+VerticalAlignment="Bottom"
+>
+GENERATE
+</Button>
+<TextBox
+Name="wordbox"
+Grid.Row="1"
+Margin="2 10 2 2"
+BorderThickness="1 6 1 2">
+i am here
+</TextBox>
+</Grid>
+
+<StackPanel
+Name="displayprofile"
+Margin="0 -535 0 0"
+Background="White">
+<Grid
+ColumnDefinitions="300 60"
+RowDefinitions="1000"
+>
+<Label
+Grid.Column="0"
+BorderBrush="Black"
+Margin="5"
+Width="200"
+Background="Black"
+Foreground="White"
+HorizontalAlignment="Left"
+VerticalAlignment="Top"
+HorizontalContentAlignment="Center"
+VerticalContentAlignment="Center"
+Height="40"
+>
+USER PROILE
+</Label>
+<Label
+Name="username"
+Grid.Column="0"
+BorderBrush="Black"
+Margin="5 65 5 5"
+Width="200"
+FontSize="20"
+
+Foreground="Black"
+FontStyle="Italic"
+FontFamily="sans-serif"
+FontWeight="Bold"
+HorizontalAlignment="Left"
+VerticalAlignment="Top"
+VerticalContentAlignment="Center"
+Height="50"
+>
+FASEEH
+</Label>
+<Label
+Name="gender"
+Grid.Column="0"
+BorderBrush="Black"
+Margin="5 90 5 5"
+Width="200"
+FontSize="13"
+Foreground="Black"
+FontStyle="Italic"
+FontFamily="sans-serif"
+FontWeight="Bold"
+HorizontalAlignment="Left"
+VerticalAlignment="Top"
+VerticalContentAlignment="Center"
+Height="50"
+>
+GENDER
+</Label>
+<Label
+Name="email"
+Grid.Column="0"
+BorderBrush="Black"
+Margin="5 170 5 5"
+Width="250"
+FontSize="13"
+Foreground="Black"
+FontStyle="Italic"
+FontFamily="sans-serif"
+FontWeight="Bold"
+HorizontalAlignment="Left"
+VerticalAlignment="Top"
+VerticalContentAlignment="Center"
+Height="50"
+>
+Email
+</Label>
+<Label
+Name="date"
+Grid.Column="0"
+BorderBrush="Black"
+Margin="5 150 5 5"
+Width="200"
+FontSize="20"
+Foreground="Black"
+FontStyle="Italic"
+FontFamily="sans-serif"
+FontWeight="Bold"
+HorizontalAlignment="Left"
+VerticalAlignment="Top"
+VerticalContentAlignment="Center"
+Height="50"
+>
+DATE
+</Label>
+
+<Button
+    Name="back"
+    Click="backbtn"
+    Grid.Column="1"
+    Height="35"
+    Width="70"
+    FontSize="15"
+    VerticalContentAlignment="Center"
+    HorizontalAlignment="Right"
+    HorizontalContentAlignment="Center"
+    VerticalAlignment="Center"
+    Background="DarkSeaGreen"
+    FontWeight="Bold">BACK
+</Button>
+</Grid>
+</StackPanel>
+</StackPanel>
+
+</Window>
